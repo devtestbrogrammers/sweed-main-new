@@ -66,6 +66,7 @@ export default function Banner() {
                         title={Title}
                         text={Text}
                         image={Image} 
+                        key={i}
                       />
                     )
                   })}

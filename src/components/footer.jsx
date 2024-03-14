@@ -55,6 +55,7 @@ export default function Footer() {
                                             image={Image} 
                                             imageSize={ImageSize} 
                                             color={Color} 
+                                            key={i}
                                         />
                                     )
                                 })}

@@ -46,6 +46,7 @@ export default function Banner() {
                 text={Text}
                 image={Image} 
                 class={Class} 
+                key={i}
               />
             )
           })}
