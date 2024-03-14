@@ -4,17 +4,16 @@ import logo from "/public/images/sweed-white.png"
 
 export default function Header() {
     return (
-        <div className="bg-color-tile text-white">
+        <div className="text-white bg-transparent absolute top-0 w-full">
             <div className="container">
                 <div className="flex justify-between items-center gap-8 h-[105px]">
                     <Link href="/">
                         <Image
-                            width={165}
+                            width={125}
                             src={logo}
                             alt=""
                         />
                     </Link>
-                    <Link href="/schedule-a-demo" className="btn btn-secondary-solid">Schedule a Demo</Link>
                 </div>
             </div>
         </div>

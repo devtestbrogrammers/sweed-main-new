@@ -1,712 +1,171 @@
 import Image from 'next/image'
-import { motion } from "framer-motion"
 
 export default function AllYouNeed() {
     return (
-      <div className="bg-color-tile lg:py-20 bg-[url('/images/bg_fluid_lines_white.png')] bg-contain bg-no-repeat bg-top">
+      <div className="all-you-need-section lg:py-20 bg-white">
         <div className="container py-20">
-          <div className="max-w-[653px] mx-auto text-center pb-[20px]">
-            <h2 className="t-heading-1-lg text-white text-center px-[30px] drop-shadow-1">All You Need In One Place</h2>
-            <p className="t-body-lg text-white !leading-[1.4]"><strong>Yorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+          <div className="pb-[30px] md:pb-[60px]">
+            <h2 className="t-heading-1-md text-[#181819]">All You Need <br/>In One Place</h2>
           </div>
-          <div className="max-w-[1060px] mx-auto text-center hidden lg:block">
-            <div class="relative">
-              <motion.div
-                initial={{ height: 0 }}
-                whileInView={{ height: "200px" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:left-[180px] xl:left-[200px] lg:w-[160px] xl:w-[200px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 rounded-se-[50px]"
+          <div className="blocks-row text-center flex justify-center max-w-[1140px] m-auto xl:gap-[10px] flex-wrap">
+            <div className='block block-1 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute top-[40px] left-[108px] w-[340px] rotate-[0deg] bg-gradient-to-r from-[#FFBF00] to-[#0280AF] h-[1px] z-20'></div>
+              <div className=' absolute top-[145px] left-[75px] w-[340px] rotate-[34deg] bg-gradient-to-r from-[#FFBF00] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute top-[130px] left-[52px] w-[172px] rotate-[62deg] bg-gradient-to-r from-[#FFBF00] to-[#289590] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_point_of_sale.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "130px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:left-[630px] xl:left-[730px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <div className='relative w-full flex pt-[55px] z-[9]'>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Point of Sale</span>
-                    <Image
-                      src="/images/all_you_need/point_of_sale.svg"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'></div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>E-Commerce</span>
-                    <Image
-                      src="/images/all_you_need/e_commerce.svg"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 1 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Marketing & Loyalty</span>
-                    <Image
-                      src="/images/all_you_need/marketing_loyalty.svg"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Point of Sale</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "130px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:right-[630px] xl:right-[730px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
+            <div className='block block-2 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute top-[40px] right-[114px] w-[150px] rotate-[180deg] bg-gradient-to-r from-[#ED254E] to-[#FFBF00] h-[1px] z-20'></div>
+              <div className=' absolute top-[132px] right-[55px] w-[166px] rotate-[118deg] bg-gradient-to-r from-[#ED254E] to-[#289590] h-[1px] z-20'></div>
+              <div className=' absolute top-[131px] left-[54px] w-[166px] rotate-[63deg] bg-gradient-to-r from-[#ED254E] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute top-[130px] left-[80px] w-[310px] rotate-[31deg] bg-gradient-to-r from-[#ED254E] to-[#5BBA6F] h-[1px] z-20'></div>
+              <div className=' absolute top-[132px] left-[90px] w-[470px] rotate-[22deg] bg-gradient-to-r from-[#ED254E] to-[#5076D8] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_marketing.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "195px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:right-[340px] xl:right-[400px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "195px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:left-[560px] xl:left-[665px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "0", height: "200px" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[-20px] lg:right-[333px] xl:right-[394px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0"
-              />
-              <div className='relative w-full flex pt-[25px] z-[9]'>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Data & Business <br/>Intelligence</span>
-                    <Image
-                      src="/images/all_you_need/data_business.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Inventory <br/>Management</span>
-                    <Image
-                      src="/images/all_you_need/inventory_management.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}
-                  >
-                    <Image
-                      src="/images/all_you_need/connector.svg"
-                      alt=""
-                      width={40}
-                      height={40}
-                      style={{ marginTop: "83px" }}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 1 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Customer <br/>Management</span>
-                    <Image
-                      src="/images/all_you_need/customer_management.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Marketing<br/>& Loyalty</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: "200px" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[-20px] lg:right-[110px] xl:right-[130px] h-[210px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-t-0 rounded-br-[50px]"
+            <div className='block block-3 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute top-[40px] right-[117px] w-[335px] rotate-[180deg] bg-gradient-to-r from-[#0280AF] to-[#FFBF00] h-[1px] z-20'></div>
+              <div className=' absolute top-[135px] left-[50px] w-[179px] rotate-[59deg] bg-gradient-to-r from-[#0280AF] to-[#5BBA6F] h-[1px] z-20'></div>
+              <div className=' absolute top-[134px] left-[86px] w-[300px] rotate-[33deg] bg-gradient-to-r from-[#0280AF] to-[#5076D8] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_payments.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "130px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:right-[400px] xl:right-[465px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "0", height: "135px" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[-20px] lg:right-[555px] xl:right-[660px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "130px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[180px] lg:right-[625px] xl:right-[730px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <div className='relative w-full flex pt-[55px] z-[9]'>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 1 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Delivery</span>
-                    <Image
-                      src="/images/all_you_need/delivery.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Integrations</span>
-                    <Image
-                      src="/images/all_you_need/integrations.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Discount Engine</span>
-                    <Image
-                      src="/images/all_you_need/discount_engine.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'></div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Integrated<br/>Payments</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "0", height: "135px" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[-20px] lg:left-[108px] xl:left-[132px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0"
+            <div className='block block-4 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute top-[128px] right-[90px] w-[470px] rotate-[158deg] bg-gradient-to-r from-[#A682FF] to-[#289590] h-[1px] z-20'></div>
+              <div className=' absolute top-[121px] right-[46px] w-[348px] rotate-[145deg] bg-gradient-to-r from-[#A682FF] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute top-[130px] right-[49px] w-[175px] rotate-[116deg] bg-gradient-to-r from-[#A682FF] to-[#5BBA6F] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_delivery.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "200px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[185px] lg:left-[135px] xl:left-[200px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "195px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[185px] lg:left-[340px] xl:left-[400px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "130px", height: "0" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[185px] lg:left-[620px] xl:left-[730px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <motion.div
-                initial={{ width: 0, height: 0 }}
-                whileInView={{ width: "0", height: "205px" }}
-                viewport={{ once: true }}
-                transition={{ duration: 2, delay: 0 }}
-                className="absolute top-[-20px] lg:left-[333px] xl:left-[394px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0"
-              />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Integrated <br/>Payments</span>
-                    <Image
-                      src="/images/all_you_need/integrated_payments.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", height: "100%" }}
-                  >
-                    <Image
-                      src="/images/all_you_need/connector.svg"
-                      alt=""
-                      width={40}
-                      height={40}
-                      style={{ marginTop: "83px" }}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>In-Store Screens</span>
-                    <Image
-                      src="/images/all_you_need/in_store_screens.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[25%]'>
-                  <motion.div
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 1 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "20px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Distribution & <br/>Logistics</span>
-                    <Image
-                      src="/images/all_you_need/distribution_logistics.svg"
-                      alt=""
-                      width={165}
-                      height={165}
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Delivery</span>    
             </div>
-          </div>
-          <div className="max-w-[310px] mx-auto text-center lg:hidden">
-            <div class="relative">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="w-[70px] absolute top-[110px] left-[120px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
+            <div className='block block-5 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute top-[44px] right-[115px] w-[720px] rotate-[180deg] bg-gradient-to-r from-[#F67227] to-[#FFBF00] h-[1px] z-20'></div>
+              <div className=' absolute top-[140px] right-[96px] w-[500px] rotate-[158deg] bg-gradient-to-r from-[#F67227] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute top-[130px] right-[85px] w-[285px] rotate-[147deg] bg-gradient-to-r from-[#F67227] to-[#5BBA6F] h-[1px] z-20'></div>
+              <div className=' absolute top-[130px] right-[56px] w-[165px] rotate-[117deg] bg-gradient-to-r from-[#F67227] to-[#5076D8] h-[1px] z-20'></div>
+              <div className=' absolute top-[44px] left-[109px] w-[150px] rotate-[0deg] bg-gradient-to-r from-[#F67227] to-[#816BC0] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_inventory.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Point of Sale</span>
-                    <Image
-                      src="/images/all_you_need/point_of_sale.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>E-Commerce</span>
-                    <Image
-                      src="/images/all_you_need/e_commerce.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Inventory<br/>Management</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[100px] absolute top-[-10px] right-[75px] border-[7px] border-[#74a4a3] border-solid border-t-0 border-b-0 border-r-0"
+            <div className='block block-6 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute top-[44px] right-[112px] w-[150px] rotate-[180deg] bg-gradient-to-r from-[#816BC0] to-[#F67227] h-[1px] z-20'></div>
+              <div className=' absolute top-[135px] right-[58px] w-[160px] rotate-[117deg] bg-gradient-to-r from-[#816BC0] to-[#B84FD7] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_integrations.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="w-[70px] absolute top-[130px] right-[120px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Marketing & Loyalty</span>
-                    <Image
-                      src="/images/all_you_need/marketing_loyalty.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Data & Business <br/>Intelligence</span>
-                    <Image
-                      src="/images/all_you_need/data_business.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Integrations</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[100px] absolute top-[-10px] left-[75px] border-[7px] border-[#74a4a3] border-solid border-t-0 border-b-0 border-r-0"
+            <div className='block block-7 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute bottom-[185px] right-[52px] w-[172px] rotate-[62deg] bg-gradient-to-r from-[#FFBF00] to-[#289590] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[184px] left-[55px] w-[166px] rotate-[116deg] bg-gradient-to-r from-[#ED254E] to-[#289590] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[187px] left-[95px] w-[475px] rotate-[158deg] bg-gradient-to-r from-[#A682FF] to-[#289590] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[88px] left-[112px] w-[530px] rotate-[180deg] bg-gradient-to-r from-[#5076D8] to-[#289590] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_customers.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="w-[70px] absolute top-[130px] left-[120px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Inventory <br/>Management</span>
-                    <Image
-                      src="/images/all_you_need/inventory_management.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Customer <br/>Management</span>
-                    <Image
-                      src="/images/all_you_need/customer_management.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Customers</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[100px] absolute top-[-10px] right-[75px] border-[7px] border-[#74a4a3] border-solid border-t-0 border-b-0 border-r-0"
+            <div className='block block-8 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute bottom-[88px] right-[114px] w-[145px] rotate-[0deg] bg-gradient-to-r from-[#289590] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[182px] right-[85px] w-[300px] rotate-[33deg] bg-gradient-to-r from-[#FFBF00] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[185px] right-[57px] w-[166px] rotate-[63deg] bg-gradient-to-r from-[#ED254E] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[186px] left-[76px] w-[310px] rotate-[147deg] bg-gradient-to-r from-[#A682FF] to-[#06AED5] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[88px] left-[109px] w-[340px] rotate-[180deg] bg-gradient-to-r from-[#5076D8] to-[#06AED5] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_analytics.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="w-[70px] absolute top-[110px] right-[120px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Delivery</span>
-                    <Image
-                      src="/images/all_you_need/delivery.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Integrations</span>
-                    <Image
-                      src="/images/all_you_need/integrations.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Analytics</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[100px] absolute top-[-10px] left-[75px] border-[7px] border-[#74a4a3] border-solid border-t-0 border-b-0 border-r-0"
+            <div className='block block-9 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute bottom-[88px] right-[100px] w-[350px] rotate-[0deg] bg-gradient-to-r from-[#289590] to-[#5BBA6F] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[183px] right-[73px] w-[310px] rotate-[31deg] bg-gradient-to-r from-[#ED254E] to-[#5BBA6F] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[184px] left-[47px] w-[180px] rotate-[116deg] bg-gradient-to-r from-[#A682FF] to-[#5BBA6F] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[182px] left-[88px] w-[290px] rotate-[147deg] bg-gradient-to-r from-[#F67227] to-[#5BBA6F] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_ecommerce.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="w-[70px] absolute top-[130px] left-[120px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
-              />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Discount Engine</span>
-                    <Image
-                      src="/images/all_you_need/discount_engine.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Integrated <br/>Payments</span>
-                    <Image
-                      src="/images/all_you_need/integrated_payments.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Ecommerce</span>    
             </div>
-            <div class="relative">
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="h-[100px] absolute top-[-10px] right-[75px] border-[7px] border-[#74a4a3] border-solid border-t-0 border-b-0 border-r-0"
+            <div className='block block-10 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute bottom-[88px] right-[100px] w-[540px] rotate-[0deg] bg-gradient-to-r from-[#289590] to-[#5076D8] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[180px] right-[86px] w-[290px] rotate-[32deg] bg-gradient-to-r from-[#0280AF] to-[#5076D8] h-[1px] z-20'></div>
+              <div className=' absolute bottom-[190px] left-[56px] w-[165px] rotate-[116deg] bg-gradient-to-r from-[#F67227] to-[#5076D8] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_in_store.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 1, delay: 0 }}
-                className="w-[70px] absolute top-[130px] right-[120px] border-[7px] border-[#74a4a3] border-solid border-l-0 border-b-0 border-r-0"
+              <span className='t-heading-6-sm text-[#181819]'>In-Store Screens</span>    
+            </div>
+            <div className='block block-11 w-[33.33%] xl:w-[180px] mb-[30px] xl:mb-[50px] relative'>
+              <div className=' absolute bottom-[176px] left-[50px] w-[170px] rotate-[116deg] bg-gradient-to-r from-[#816BC0] to-[#B84FD7] h-[1px] z-20'></div>
+              <Image
+                src="/images/homepage/icon_distribution.png"
+                alt=""
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-[60px] md:w-[74px] h-[60px] md:h-[74px] m-auto relative z-30"
               />
-              <div className='relative w-full flex pt-[30px] z-[9]'>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>In-Store Screens</span>
-                    <Image
-                      src="/images/all_you_need/in_store_screens.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-                <div className='w-[50%]'>
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 2, delay: 0 }}
-                    style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "flex-end", height: "100%", gap: "15px" }}
-                  >
-                    <span className='t-heading-6 lg:!leading-[26px] text-white opacity-90'>Distribution & <br/>Logistics</span>
-                    <Image
-                      src="/images/all_you_need/distribution_logistics.png"
-                      alt=""
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-[105px] h-[105px] lg:w-[165px] lg:h-[165px]"
-                    />
-                  </motion.div>
-                </div>
-              </div>
+              <span className='t-heading-6-sm text-[#181819]'>Distribution<br/>& Logistics</span>    
             </div>
           </div>
         </div>
