@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ImageText(props) {
     return (
-      <div className="max-w-[220px]">
+      <div className="max-w-full sm:max-w-[220px] md:max-w-[180px] xl:max-w-[180px] 2xl:max-w-[220px]">
           <div className={`flex items-start flex-col gap-[30px]`}>
               <div className='w-full'>
                 <Image

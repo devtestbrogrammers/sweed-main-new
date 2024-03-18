@@ -164,14 +164,14 @@ swiper-container::part(scrollbar) {
 }
 
 .prose {
-  @apply t-body-sm lg:t-body-lg;
+  @apply t-body-sm md:t-body-md;
 
   h1 {
     @apply t-heading-1 bg-gradient-mesh bg-cover bg-center bg-clip-text text-transparent;
   }
 
   h2 {
-    @apply t-heading-2 bg-gradient-mesh bg-cover bg-center bg-clip-text text-transparent;
+    @apply t-heading-1-md;
   }
 
   h3 {
@@ -223,6 +223,12 @@ swiper-container::part(scrollbar) {
 }
 .all-you-need-section .block:hover > div {
   opacity: 1;
+}
+.all-you-need-section .blocks-row:hover .block { 
+  filter: grayscale(100%);
+}
+.all-you-need-section .blocks-row:hover .block.active { 
+  filter: grayscale(0) !important;
 }
 @media only screen and (max-width: 1280px) {
 .all-you-need-section .block > div {

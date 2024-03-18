@@ -56,7 +56,7 @@ export default function Banner() {
                     <h2 className='t-heading-1-md text-[#181819] mb-[10px]'>Empower <br/>Your Business</h2>
                     <p className='t-body-md'>To accomplish more with less tech</p>
                 </div>
-                <div className='w-full md:w-[540px] xl:w-[40%] flex gap-[60px] md:gap-[75px] flex-wrap flex-col md:flex-row'>
+                <div className='w-full md:w-[680px] xl:w-[540px] 2xl:w-[40%] flex gap-[50px] xl:gap-[75px] flex-wrap flex-col sm:flex-row'>
                   {blockSmall.map((block, i) => {
                     const Title = block.title;
                     const Text = block.text;

@@ -34,7 +34,7 @@ export default function Footer() {
     });
 
     return (
-        <div className="bg-color-tile bg-[url('/images/homepage/home_banner_bg.png')] bg-cover">
+        <div className="bg-color-tile bg-[url('/images/homepage/home_banner_bg.jpg')] bg-cover">
             <div className=" py-12 md:py-28">
                 <div className="container">
                     <div className='flex items-start flex-col xl:flex-row gap-10'>
@@ -62,7 +62,7 @@ export default function Footer() {
                             </div>
                         </div>
                         <div className='w-full xl:w-[50%]'>
-                            <div className='bg-white p-[20px] md:p-[40px]'>
+                            <div id="schedule-form" className='bg-white p-[20px] md:p-[40px]'>
                                 <div id="hs-form"></div>
                             </div>
                         </div>

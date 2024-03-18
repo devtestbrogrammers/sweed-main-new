@@ -20,21 +20,23 @@ const poppins = Poppins({
   variable: '--font-poppins'
 })
 
-// function onReadyCustomFunc() {
-//   const swiperEl = document.querySelector('swiper-container');
-//   swiperEl.addEventListener("wheel", event => {
-//     const delta = Math.sign(event.deltaY);
-//     console.log(delta);
-//     if(delta == 1) {
-//       $(".custom-arrow-swiper > div").removeClass("active");
-//       $(".custom-arrow-swiper > .down").addClass("active");
-//     }
-//     else {
-//       $(".custom-arrow-swiper > div").removeClass("active");
-//       $(".custom-arrow-swiper > .up").addClass("active");
-//     }
-//   });
-// }
+function onReadyCustomFunc() {
+  /* All You Need section */
+  $(".all-you-need-section .blocks-row .block").hover(function(){
+    $(this).parent().find('.block').removeClass('active');
+    $(this).addClass('active');
+    let dataConnect = $(this).attr('data-connect');
+    if(dataConnect) {
+      let data = dataConnect.split(',');
+      if(data) {
+        $(data).each(function (index, value) {
+          let valueClass = value.trim();
+          $("."+valueClass).addClass('active');
+        });
+      }
+    }
+  })
+}
 export default function App({ Component, pageProps }) {
   return (
     <HubspotProvider>
@@ -42,11 +44,11 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Sweed</title>
       </Head>
-      {/* <Script 
+      <Script 
         src="/js/custom.js" 
         strategy="lazyOnload"
         onReady={onReadyCustomFunc}
-      /> */}
+      />
 
       <main className={`${lato.variable} ${poppins.variable} font-lato antialiased overflow-hidden bg-diamonds flex flex-col min-h-screen`}>
         <Header />

@@ -1,11 +1,16 @@
+import BannerSection from '@/components/banner-section';
+
 export default function TermsAndConditions() {
     return (
         <main>
-            <div className="py-20">
-                <div className="container max-w-[768px]">
-                    <h1 className="t-heading-1 bg-gradient-mesh bg-cover bg-center bg-clip-text text-transparent text-center mb-10">Terms & Conditions</h1>
+            <BannerSection
+                title={<>Terms & Conditions</>}
+                image=""
+            />
 
-                    <div className="prose">
+            <div className="py-20 bg-white">
+                <div className="container">
+                    <div className="prose !leading-[1.5]">
                         <p>These Terms of Service (“Terms of Service” or “ToS”) govern the use of the cannabis product ordering and delivery service that SD Technologies, Inc. (“Sweed” or “us” or “we”) makes available to an individual consumer (“you”) through our website located at www.sweedpos.com (the “Website”) and through mobile applications and related services, as modified from time to time (collectively, the “Service”). The Website and the Service are collectively and individually referred to as the “Solution”. As used in these ToS, the word “including” means “including without limitation”.</p>
                         <p>THESE TERMS OF SERVICE CONTAIN A BINDING ARBITRATION CLAUSE AND CLASS ACTION WAIVER THAT IMPACT YOUR RIGHTS IN RESOLVING DISPUTES.</p>
                         <p>By accessing or using the Solution, you expressly accept all of the provisions of these ToS and represent to us that you are an age legally permitted for ordering cannabis products for the state or province in which you are located, and that you are legally competent to enter into and agree to these ToS. If you do not accept these ToS, then you may not use the Solution.</p>
