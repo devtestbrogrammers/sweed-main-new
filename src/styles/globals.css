@@ -229,11 +229,13 @@ swiper-container::part(scrollbar) {
 .all-you-need-section .blocks-row .block-inner { 
   display: inline-block;
 }
+@media only screen and (min-width: 1281px) {
 .all-you-need-section .blocks-row:hover .block { 
   filter: grayscale(100%);
 }
 .all-you-need-section .blocks-row:hover .block.active { 
   filter: grayscale(0) !important;
+}
 }
 @media only screen and (max-width: 1280px) {
 .all-you-need-section .block-inner > div {
