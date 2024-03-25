@@ -21,11 +21,11 @@ const poppins = Poppins({
 })
 
 function onReadyCustomFunc() {
-  /* All You Need section */
-  $(".all-you-need-section .blocks-row .block").hover(function(){
-    $(this).parent().find('.block').removeClass('active');
-    $(this).addClass('active');
-    let dataConnect = $(this).attr('data-connect');
+  /* "All You Need" section */
+  $(".all-you-need-section .blocks-row .block-inner").hover(function(){
+    $(this).parent().parent().find('.block').removeClass('active');
+    $(this).parent().addClass('active');
+    let dataConnect = $(this).parent().attr('data-connect');
     if(dataConnect) {
       let data = dataConnect.split(',');
       if(data) {
@@ -36,6 +36,32 @@ function onReadyCustomFunc() {
       }
     }
   })
+  /* "Image Text Block" section */
+  $(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop();
+    var pageBottom = pageTop + $(window).height();
+    var blocks = $(".image-text-block");
+    for (var i = 0; i < blocks.length; i++) {
+      var block = blocks[i];
+      if ($(block).position().top < pageBottom && !$(this).hasClass("active")) {
+        $(block).addClass("active");
+      }
+    }
+  });
+  /* "Title Block" section */
+  $(document).on("scroll", function() {
+    if( $("div").hasClass("title-block-section") ) {
+      var pageTop = $(document).scrollTop();
+      var pageBottom = pageTop;
+      var block_content = $(".title-block-section .content");
+      var block_header = $(".title-block-section .header");
+      if ( ($(block_content).position().top < pageBottom) && (pageBottom < $(block_content).position().top + $(block_content).height() - 200) ) {
+        $(block_header).addClass("active");
+      } else {
+        $(block_header).removeClass("active");
+      }
+    }
+  });
 }
 export default function App({ Component, pageProps }) {
   return (
