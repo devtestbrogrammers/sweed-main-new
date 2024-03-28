@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function ImageText(props) {
     return (
-      <div className="max-w-full sm:max-w-[220px] md:max-w-[180px] xl:max-w-[180px] 2xl:max-w-[220px]">
+      <div className="max-w-full sm:max-w-[220px] md:max-w-[290px] lg:max-w-[150px] xl:max-w-[180px] 2xl:max-w-[220px]">
           <div className={`flex items-start flex-col gap-[30px]`}>
               <div className='w-full'>
                 <Image
@@ -12,7 +12,7 @@ export default function ImageText(props) {
                   height={0}
                   sizes="100vw"
                   style={props.imageSize ? { width: props.imageSize, height: props.imageSize } : { width: '100%', height: 'auto' }}
-                  className='hidden md:block'
+                  className='hidden lg:block'
                 />
                 <Image
                   src={props.imageMB}
@@ -21,7 +21,7 @@ export default function ImageText(props) {
                   height={0}
                   sizes="100vw"
                   style={props.imageSize ? { width: props.imageSize, height: props.imageSize } : { width: '100%', height: 'auto' }}
-                  className='block md:hidden'
+                  className='block lg:hidden'
                 />
               </div>
               <div className='w-full'>

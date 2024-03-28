@@ -47,7 +47,7 @@
   }
 
   .t-heading-1-md {
-    @apply font-poppins font-semibold text-[36px] lg:text-[72px] leading-[1.3] md:leading-[1.2] pb-[0.2em];
+    @apply font-poppins font-semibold text-[36px] lg:text-[55px] xl:text-[72px] leading-[1.3] md:leading-[1.2] pb-[0.2em];
   }
 
   .t-heading-1-lg {
@@ -218,6 +218,23 @@ swiper-container::part(scrollbar) {
     @apply mt-[1em];
   }
 }
+/* Header section */
+.header-section.active {
+  background-color: white;
+  border-bottom: 1px solid #E8E8E7;
+}
+.header-section img {
+  display: none;
+}
+.header-section:not(.active) .logo-white {
+  display: block;
+}
+.header-section.active .logo-green {
+  display: block;
+}
+.header-section:not(.active) .btn {
+  display: none;
+}
 /* "All You Need" section */
 .all-you-need-section .block-inner > div {
   transition: all 0.5s ease;
@@ -257,15 +274,15 @@ swiper-container::part(scrollbar) {
   position: fixed;
   top: 0px;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
 .title-block-section .content > div:nth-child(2) {
   margin-top: 215px;
 }
 .title-block-section .content > div:nth-child(odd):not(:first-child) {
-  margin-top: -200px;
+  margin-top: -150px;
 }
 }
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1023px) {
 .title-block-section .header.active {
   position: static !important;
 }

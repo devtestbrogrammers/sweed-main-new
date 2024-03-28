@@ -65,13 +65,13 @@ export default function Banner() {
       <div className="bg-white title-block-section">
         <div className="container pt-[0px] xl:pt-[50px] pb-[120px] xl:pb-[120px]">
             <hr className='md:hidden border-1 border-[#d0d0cf] mb-[60px] bg-white' />
-            <div className='flex items-start flex-col xl:flex-row gap-12 md:gap-10'>
-                <div className='w-full xl:w-[60%]'>
+            <div className='flex items-start flex-col lg:flex-row gap-[50px] lg:gap-[160px]'>
+                <div className='w-full lg:w-[50%]'>
                   <div className='header'>
                     <h2 className='t-heading-1-md text-[#181819] mb-[10px]'>Empower <br/>Your Business</h2>
                   </div>
                 </div>
-                <div className='content w-full md:w-[680px] xl:w-[540px] 2xl:w-[40%] flex gap-[50px] xl:gap-[75px] flex-wrap flex-col sm:flex-row'>
+                <div className='content w-full md:w-[680px] lg:w-[50%] flex gap-[50px] flex-wrap flex-col sm:flex-row'>
                   {blockSmall.map((block, i) => {
                     const Title = block.title;
                     const Text = block.text;

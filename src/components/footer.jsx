@@ -30,20 +30,21 @@ const blockSmall = [
 
 export default function Footer() {
     const { loaded, error, formCreated } = useHubspotForm({
+        region: "na1",
         portalId: '7260254',
-        formId: 'e341b340-bdbd-41a1-8056-8b78da68cfff',
+        formId: '7387d131-39c8-4b2d-98c7-80e47c803365',
         target: '#hs-form'
     });
 
     return (
-        <div className="bg-color-tile bg-[url('/images/homepage/home_banner_bg.jpg')] bg-cover px-[8px]">
+        <div className="bg-color-tile min-h-screen bg-[url('/images/homepage/home_banner_bg.jpg')] bg-cover px-[8px]">
             <div className=" py-12 md:py-28">
                 <div className="container">
-                    <div className='flex items-center flex-col xl:flex-row gap-10'>
-                        <div className='w-full xl:w-[50%]'>
-                            <h2 className='t-heading-1-md text-white mb-[15px]'>Schedule <br/>a Demo</h2>
-                            <p className="t-body-sm text-white max-w-[385px] !leading-[28px]">Empower Revenue Growth and Boost Cost Efficiency With Our Expert Assistance</p>
-                            <div className="hidden md:flex w-full md:w-[520px] gap-[30px] md:gap-[60px] mt-[60px] flex-wrap flex-col md:flex-row">
+                    <div className='flex items-center flex-col lg:flex-row gap-[50px] lg:gap-[160px]'>
+                        <div className='w-full lg:w-[50%]'>
+                            <h2 className='t-heading-1-md text-white mb-[15px] lg:max-w-[390px]'>Schedule a Demo</h2>
+                            <p className="t-body-sm text-white lg:max-w-[385px] !leading-[28px]">Empower Revenue Growth and Boost Cost Efficiency With Our Expert Assistance</p>
+                            <div className="hidden lg:flex w-full xl:w-[520px] gap-[30px] md:gap-[60px] mt-[60px] flex-wrap">
                                 {blockSmall.map((block, i) => {
                                     const Title = block.title;
                                     const Text = block.text;
@@ -65,11 +66,11 @@ export default function Footer() {
                                 })}
                             </div>
                         </div>
-                        <div className='w-full xl:w-[50%]'>
+                        <div className='w-full lg:w-[50%]'>
                             <div id="schedule-form" className='bg-white p-[20px] md:p-[40px]'>
                                 <div id="hs-form"></div>
                             </div>.
-                            <div className="flex md:hidden w-full md:w-[520px] gap-[30px] md:gap-[60px] mt-[30px] flex-wrap flex-col md:flex-row">
+                            <div className="flex lg:hidden w-full xl:w-[520px] gap-[30px] md:gap-[60px] mt-[30px] flex-wrap">
                                 {blockSmall.map((block, i) => {
                                     const Title = block.title;
                                     const Text = block.text;
@@ -107,11 +108,11 @@ export default function Footer() {
                             <p className='t-body-xs text-white !leading-[24px] max-w-[190px] border-l-[1px] border-[rgba(255,255,255,.24)] pl-[15px]'>One platform to manage all cannabis retail operations</p>
                         </div>
                         <div className="flex items-center justify-start md:justify-end gap-[50px] md:gap-[30px] max-w-full md:max-w-[400px] w-full">
-                            <Link href="mailto:hello@sweed.com" className='hover:opacity-70 transition-all'>
-                                <p className='t-heading-6 text-white'>hello@sweed.com</p>             
+                            <Link href="mailto:sales@sweedpos.com" className='hover:opacity-70 transition-all'>
+                                <p className='t-heading-6 text-white'>sales@sweedpos.com</p>             
                             </Link>
                             <div className="flex items-center justify-end gap-[30px]">
-                                <Link href="#" target="_blank" className='hover:opacity-70 transition-all'>
+                                <Link href="https://www.instagram.com/getsweed/" target="_blank" className='hover:opacity-70 transition-all'>
                                     <Image
                                         width={28}
                                         src={iconInsta}

@@ -3,24 +3,18 @@ import Link from "next/link"
 
 export default function Banner(props) {
     return (
-      <div className="bg-color-tile relative w-full min-h-screen">
-        <video
-          preload="auto"
-          playsInline
-          autoPlay
-          muted
-          loop
-          className='absolute top-0 left-0 bottom-0 right-0 object-cover w-full h-full z-10'
-        >
-          <source src="/videos/home_banner.mp4" type="video/mp4" />
-        </video>
-        <div className="container pt-[120px] xl:pt-[50px] pb-[50px] xl:pb-0 relative z-40">
-            <div className='flex items-end flex-col xl:flex-row gap-10'>
-                <div className='w-full xl:w-[60%]'>
-                    <h2 className='t-heading-1-md text-white max-w-[640px] mb-[30px]'>{props.title}</h2>
+      <div className={`bg-color-tile relative w-full flex items-center xl:pt-[80px] ${props.class}`}>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+        <div className='absolute top-0 left-0 bottom-0 right-0 object-cover w-full h-full z-10'>
+          <spline-viewer url="/videos/sweed_gradient_v_2.spline"></spline-viewer>
+        </div>
+        <div className="container pt-[120px] xl:pt-[50px] pb-[50px] relative z-40">
+            <div className='flex items-end flex-col lg:flex-row gap-10'>
+                <div className='w-full lg:w-[60%]'>
+                    <h2 className={`t-heading-1-md text-white mb-[30px] max-w-[${props.titleWidth}]`}>{props.title}</h2>
                     <Link href="#schedule-form" className="btn btn-green-solid hover:bg-[#12130f]">Schedule a Demo</Link>
                 </div>
-                <div className='w-full xl:w-[40%]'>
+                <div className='w-full lg:w-[40%]'>
                     <Image
                       src={props.image}
                       alt=""

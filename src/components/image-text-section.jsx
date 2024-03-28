@@ -15,7 +15,7 @@ const blockData = [
     text: (<><p>Puts you in the spotlight. Amplify your brand presence with a custom-branded website and native app.</p><p>Tap into unlimited merchandising capabilities and integrated loyalty & marketing and banner management.</p></>),
     image: homeImage1_2x,
     imageMB: homeImage1_3x,
-    class: 'xl:flex-row-reverse',
+    class: 'lg:flex-row-reverse',
   },
   {
     title: (<>Manage <br/>Customers</>),
@@ -25,11 +25,11 @@ const blockData = [
     class: '',
   },
   {
-    title: (<>Unordinary <br/>Point of Sale</>),
+    title: (<>Extraordinary <br/>Point of Sale</>),
     text: (<><p>It`s feature-packed. Sweed’s intelligent promotion features provide your bud tenders with smart recommendations based on top-selling products and customer data</p><p>Payments, loyalty & marketing, product recommendations, and discounts are all integrated</p></>),
     image: homeImage3_2x,
     imageMB: homeImage3_3x,
-    class: 'xl:flex-row-reverse',
+    class: 'lg:flex-row-reverse',
   },
   {
     title: (<>Loyalty <br/>& Marketing</>),

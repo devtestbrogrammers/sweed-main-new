@@ -21,6 +21,15 @@ const poppins = Poppins({
 })
 
 function onReadyCustomFunc() {
+  /* Header section */
+  $(document).on("scroll", function() {
+    var pageTop = $(document).scrollTop();
+    if(pageTop > 100) {
+      $(".header-section").addClass('active');
+    } else {
+      $(".header-section").removeClass('active');
+    }
+  })
   /* "All You Need" section */
   $(".all-you-need-section .blocks-row .block-inner").hover(function(){
     $(this).parent().parent().find('.block').removeClass('active');
