@@ -4,7 +4,6 @@ import Link from "next/link"
 export default function Banner(props) {
     return (
       <div className={`bg-color-tile relative w-full flex items-center xl:pt-[80px] ${props.class}`}>
-        <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
         <div className='absolute top-0 left-0 bottom-0 right-0 object-cover w-full h-full z-10'>
           <spline-viewer url="/videos/sweed_gradient_v_2.spline"></spline-viewer>
         </div>
